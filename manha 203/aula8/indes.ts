@@ -17,7 +17,7 @@ setvelocidade(velocidade : number):void{
 }
 
 else(){
-console.log('vocxa nao pode ter velocidade negativa')
+console.log('voce nao pode ter velocidade negativa')
 
 }
 
