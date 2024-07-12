@@ -1,8 +1,10 @@
-export interface Produto{
+
+
+
+export interface Produtos{
 
     tipo : string 
-    nome : string
-    peso : number
+    nome : string  
     preco : number
 
     mostrarPreco():void
@@ -10,4 +12,6 @@ export interface Produto{
     
 
 }
+
+
 
