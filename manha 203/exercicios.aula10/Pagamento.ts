@@ -1,6 +1,11 @@
 
 export interface Pagamento{
 
-    nome:string
+
+
+
+    mostrarPagamento()
+
+    
 
 }
