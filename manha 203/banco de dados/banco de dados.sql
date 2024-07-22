@@ -96,12 +96,46 @@ ordenar---
 
 select *
  from clientes 
- order by nome asc; 
+ order by nome asc; -- ordem crescente -- desc ordena ao contrario
+
+select
+
+
+
+
+
+CREATE TABLE Pedidos (
+idPedido int AUTO_INCREMENT PRIMARY KEY,
+id_Clientes int,
+    numeroPedidos varchar(40),
+    valorTotal decimal (10, 2),
+    dataPedido date,
+    FOREIGN KEY (id_Clientes) REFERENCES clientes(id_Clientes)
+
+);
+
+
+
+
+--valores de datas ano mes dia ---
+
+
+USE ti3k5791_mathiasantonio;
+
+INSERT INTO Pedidos (id_Clientes, numeroPedidos, valorTotal, dataPedido)
+VALUES (1, 'pedid-001' , 200.00 , '2023-07-12'),
+       (1, 'pedid-002' , 150.00 , '2023-07-12'),
+       (1, 'pedid-003' , 180.56 , '2023-07-12');
+
+       
+
+select SUM(valorTotal) AS valor_total_pedidos
+FROM Pedidos ;
 
 
 
 
 
 
-
-      
+select count (*)
+from Pedidos
